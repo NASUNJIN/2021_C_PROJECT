@@ -26,27 +26,38 @@ int main(void)
 		printf("%d", ang_arr[i]);
 
 	// 숫자 생성
-	int input = 0;
 	int compare[4];
 	int k = 0;
 
-	printf("\n"); // 답 엔터
-
-	for (int i = 0; i < 5; i++)
+	// scanf 사용
+	/* for (int i = 0; i < 5; i++)
 	{
+		printf("\n숫자 입력 : ");
 		scanf("%d%d%d%d", &compare[0], &compare[1], &compare[2], &compare[3]);
-		for (int i = 0; i < 4; i++)
-			printf("%d", compare[i]);
-		printf("\n");
-		for (int i = 0; i < 4; i++)
-		{
-			if (ang_arr[i] == compare[i])
-				k++;
-		}
-		printf("S : %d", k);
-	}
-	
-	
+		
+			int s = 0, b = 0;
+			for (int k = 0; k < 4; k++)
+			{
+				for (int i = 0; i < 4; i++)
+				{
+					if (i == k)
+					{
+						if (ang_arr[k] == compare[i])
+							s++;
+					}
+					else if (ang_arr[k] == compare[i])
+						b++;
+				}
+			}
+
+			if (k == 4) {
+				printf("WIN");
+				break;
+			}
+			printf("S : %d, B : %d\n", s, b);
+	} */
+
+
 	
 }
 
